@@ -1,3 +1,5 @@
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+
 require File.join(File.dirname(`node --print "require.resolve('expo/package.json')"`), "scripts/autolinking")
 # Resolve react_native_pods.rb with node to allow for hoisting
 require Pod::Executable.execute_command('node', ['-p',
@@ -18,7 +20,9 @@ prepare_react_native_project!
 #   dependencies: {
 #     ...(process.env.NO_FLIPPER ? { 'react-native-flipper': { platforms: { ios: null } } } : {}),
 # ```
-flipper_config = ENV['NO_FLIPPER'] == "1" ? FlipperConfiguration.disabled : FlipperConfiguration.enabled
+# Flipper 与新版 Xcode 不兼容（FlipperTransportTypes.h 缺少 <functional>），默认禁用。
+# 如确实需要 Flipper，可用 USE_FLIPPER=1 pod install 打开。
+flipper_config = ENV['USE_FLIPPER'] == "1" ? FlipperConfiguration.enabled : FlipperConfiguration.disabled
 
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil

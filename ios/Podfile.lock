@@ -1,6 +1,5 @@
 PODS:
   - boost (1.83.0)
-  - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
   - EXAV (13.10.6):
     - ExpoModulesCore
@@ -10,16 +9,16 @@ PODS:
     - ExpoModulesCore
     - ZXingObjC/OneD
     - ZXingObjC/PDF417
-  - EXConstants (15.4.2):
+  - EXConstants (15.4.0):
     - ExpoModulesCore
-  - EXFont (11.10.2):
+  - EXFont (11.10.3):
     - ExpoModulesCore
   - EXImageLoader (4.6.0):
     - ExpoModulesCore
     - React-Core
   - EXLocation (16.5.5):
     - ExpoModulesCore
-  - Expo (50.0.2):
+  - Expo (50.0.21):
     - ExpoModulesCore
   - ExpoBrightness (11.8.0):
     - ExpoModulesCore
@@ -33,7 +32,7 @@ PODS:
     - ExpoModulesCore
   - ExpoKeepAwake (12.8.2):
     - ExpoModulesCore
-  - ExpoModulesCore (1.11.7):
+  - ExpoModulesCore (1.11.14):
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
@@ -50,69 +49,12 @@ PODS:
     - React-Core (= 0.73.1)
     - React-jsi (= 0.73.1)
     - ReactCommon/turbomodule/core (= 0.73.1)
-  - Flipper (0.201.0):
-    - Flipper-Folly (~> 2.6)
-  - Flipper-Boost-iOSX (1.76.0.1.11)
-  - Flipper-DoubleConversion (3.2.0.1)
-  - Flipper-Fmt (7.1.7)
-  - Flipper-Folly (2.6.10):
-    - Flipper-Boost-iOSX
-    - Flipper-DoubleConversion
-    - Flipper-Fmt (= 7.1.7)
-    - Flipper-Glog
-    - libevent (~> 2.1.12)
-    - OpenSSL-Universal (= 1.1.1100)
-  - Flipper-Glog (0.5.0.5)
-  - Flipper-PeerTalk (0.0.4)
-  - FlipperKit (0.201.0):
-    - FlipperKit/Core (= 0.201.0)
-  - FlipperKit/Core (0.201.0):
-    - Flipper (~> 0.201.0)
-    - FlipperKit/CppBridge
-    - FlipperKit/FBCxxFollyDynamicConvert
-    - FlipperKit/FBDefines
-    - FlipperKit/FKPortForwarding
-    - SocketRocket (~> 0.6.0)
-  - FlipperKit/CppBridge (0.201.0):
-    - Flipper (~> 0.201.0)
-  - FlipperKit/FBCxxFollyDynamicConvert (0.201.0):
-    - Flipper-Folly (~> 2.6)
-  - FlipperKit/FBDefines (0.201.0)
-  - FlipperKit/FKPortForwarding (0.201.0):
-    - CocoaAsyncSocket (~> 7.6)
-    - Flipper-PeerTalk (~> 0.0.4)
-  - FlipperKit/FlipperKitHighlightOverlay (0.201.0)
-  - FlipperKit/FlipperKitLayoutHelpers (0.201.0):
-    - FlipperKit/Core
-    - FlipperKit/FlipperKitHighlightOverlay
-    - FlipperKit/FlipperKitLayoutTextSearchable
-  - FlipperKit/FlipperKitLayoutIOSDescriptors (0.201.0):
-    - FlipperKit/Core
-    - FlipperKit/FlipperKitHighlightOverlay
-    - FlipperKit/FlipperKitLayoutHelpers
-  - FlipperKit/FlipperKitLayoutPlugin (0.201.0):
-    - FlipperKit/Core
-    - FlipperKit/FlipperKitHighlightOverlay
-    - FlipperKit/FlipperKitLayoutHelpers
-    - FlipperKit/FlipperKitLayoutIOSDescriptors
-    - FlipperKit/FlipperKitLayoutTextSearchable
-  - FlipperKit/FlipperKitLayoutTextSearchable (0.201.0)
-  - FlipperKit/FlipperKitNetworkPlugin (0.201.0):
-    - FlipperKit/Core
-  - FlipperKit/FlipperKitReactPlugin (0.201.0):
-    - FlipperKit/Core
-  - FlipperKit/FlipperKitUserDefaultsPlugin (0.201.0):
-    - FlipperKit/Core
-  - FlipperKit/SKIOSNetworkPlugin (0.201.0):
-    - FlipperKit/Core
-    - FlipperKit/FlipperKitNetworkPlugin
   - fmt (6.2.1)
   - glog (0.3.5)
   - hermes-engine (0.73.1):
     - hermes-engine/Pre-built (= 0.73.1)
   - hermes-engine/Pre-built (0.73.1)
   - libevent (2.1.12)
-  - OpenSSL-Universal (1.1.1100)
   - RCT-Folly (2022.05.16.00):
     - boost
     - DoubleConversion
@@ -984,7 +926,7 @@ PODS:
   - React-Mapbuffer (0.73.1):
     - glog
     - React-debug
-  - react-native-cameraroll (7.8.3):
+  - react-native-cameraroll (7.10.2):
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
@@ -992,7 +934,7 @@ PODS:
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
-  - react-native-image-resizer (3.0.10):
+  - react-native-image-resizer (3.0.11):
     - React-Core
   - react-native-netinfo (11.1.0):
     - React-Core
@@ -1177,15 +1119,17 @@ PODS:
     - React-perflogger (= 0.73.1)
   - RNCAsyncStorage (1.21.0):
     - React-Core
-  - RNCClipboard (1.14.3):
+  - RNCClipboard (1.16.3):
     - React-Core
-  - RNCMaskedView (0.3.1):
+  - RNCMaskedView (0.3.2):
+    - glog
+    - RCT-Folly (= 2022.05.16.00)
     - React-Core
   - RNCPicker (2.6.1):
     - React-Core
-  - RNDeviceInfo (14.0.0):
+  - RNDeviceInfo (14.0.4):
     - React-Core
-  - RNGestureHandler (2.14.0):
+  - RNGestureHandler (2.14.1):
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
@@ -1206,46 +1150,25 @@ PODS:
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
-  - "EXAV (from `../node_modules/.pnpm/expo-av@13.10.6_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@babel+core_zp2rozwhrq7rc5dtgepwmlltyy/node_modules/expo-av/ios`)"
-  - "EXBarCodeScanner (from `../node_modules/.pnpm/expo-barcode-scanner@12.9.3_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_punelqt4h5lc2uoqdnoh3bzxlu/node_modules/expo-barcode-scanner/ios`)"
-  - "EXConstants (from `../node_modules/.pnpm/expo-constants@15.4.2_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@babe_y3n7gabpdvaruh7tx7a6n4gexm/node_modules/expo-constants/ios`)"
-  - "EXFont (from `../node_modules/.pnpm/expo-font@11.10.2_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@babel+co_fvvfgt5mm5k23ccahug6zdrg34/node_modules/expo-font/ios`)"
-  - "EXImageLoader (from `../node_modules/.pnpm/expo-image-loader@4.6.0_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@ba_44a663s7rm7rcff2ghmmg3o2km/node_modules/expo-image-loader/ios`)"
-  - "EXLocation (from `../node_modules/.pnpm/expo-location@16.5.5_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@babel_y7gjultdbhdgphfb3yazsw2hxe/node_modules/expo-location/ios`)"
-  - "Expo (from `../node_modules/.pnpm/expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@babel+core@7.23.7_@babel+p_m5evogjajrkyzcmf2vz3xvcmzy/node_modules/expo`)"
-  - "ExpoBrightness (from `../node_modules/.pnpm/expo-brightness@11.8.0_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@bab_xj2gv6cydawmjeroupmj4pmxnu/node_modules/expo-brightness/ios`)"
-  - "ExpoCamera (from `../node_modules/.pnpm/expo-camera@14.1.3_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@babel+c_kvjnkoree4eblkje6grncsaq3y/node_modules/expo-camera/ios`)"
-  - "ExpoFileSystem (from `../node_modules/.pnpm/expo-file-system@16.0.9_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@ba_z7maicoqqr4hgdrme4i7xjb2ue/node_modules/expo-file-system/ios`)"
-  - "ExpoImagePicker (from `../node_modules/.pnpm/expo-image-picker@14.7.1_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@b_bniodpefwujg44kcztusmdukre/node_modules/expo-image-picker/ios`)"
-  - "ExpoKeepAwake (from `../node_modules/.pnpm/expo-keep-awake@12.8.2_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@bab_kfuogcrrnqniuca3zpt35xgyc4/node_modules/expo-keep-awake/ios`)"
-  - "ExpoModulesCore (from `../node_modules/.pnpm/expo-modules-core@1.11.7/node_modules/expo-modules-core`)"
-  - "ExpoSensors (from `../node_modules/.pnpm/expo-sensors@12.9.1_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@babel+_25wu3sj5jtt6aloamydmoplbdm/node_modules/expo-sensors/ios`)"
+  - "EXAV (from `../node_modules/.pnpm/expo-av@13.10.6_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-native+bab_1e445cb00bbe753f964adb7d86948bd2/node_modules/expo-av/ios`)"
+  - "EXBarCodeScanner (from `../node_modules/.pnpm/expo-barcode-scanner@12.9.3_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@reac_507778ec3374d01133f9b94c3d615c86/node_modules/expo-barcode-scanner/ios`)"
+  - "EXConstants (from `../node_modules/.pnpm/expo-constants@15.4.0_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-nati_a3f2e63fe56bd225e50b9fd9926f2166/node_modules/expo-constants/ios`)"
+  - "EXFont (from `../node_modules/.pnpm/expo-font@11.10.3_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-native+b_85b57d6fd6efa179493fdf0c3500d79d/node_modules/expo-font/ios`)"
+  - "EXImageLoader (from `../node_modules/.pnpm/expo-image-loader@4.6.0_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-na_5d5cf2ffe0acf60c7812d12478680040/node_modules/expo-image-loader/ios`)"
+  - "EXLocation (from `../node_modules/.pnpm/expo-location@16.5.5_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-nativ_a418e8287d54347fc33a42d5b5f066b8/node_modules/expo-location/ios`)"
+  - "Expo (from `../node_modules/.pnpm/expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-native+babel-preset@0.73.1_11e8407594deb75f2e6cf7d730b17c4a/node_modules/expo`)"
+  - "ExpoBrightness (from `../node_modules/.pnpm/expo-brightness@11.8.0_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-nat_575f1190304d99c4b7d64e14e7e0a25c/node_modules/expo-brightness/ios`)"
+  - "ExpoCamera (from `../node_modules/.pnpm/expo-camera@14.1.3_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-native+_426775f7e2e72c37045c088a0bff1ae7/node_modules/expo-camera/ios`)"
+  - "ExpoFileSystem (from `../node_modules/.pnpm/expo-file-system@16.0.9_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-na_437518240f23c3239b16236de1f83115/node_modules/expo-file-system/ios`)"
+  - "ExpoImagePicker (from `../node_modules/.pnpm/expo-image-picker@14.7.1_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-n_d4fe5f92e7a1aeeb157c94b8e93280d3/node_modules/expo-image-picker/ios`)"
+  - "ExpoKeepAwake (from `../node_modules/.pnpm/expo-keep-awake@12.8.2_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-nat_0cbf4269bec9fdff86b2702704f652be/node_modules/expo-keep-awake/ios`)"
+  - "ExpoModulesCore (from `../node_modules/.pnpm/expo-modules-core@1.11.14/node_modules/expo-modules-core`)"
+  - "ExpoSensors (from `../node_modules/.pnpm/expo-sensors@12.9.1_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-native_fb251178372ab75657801e15e072807e/node_modules/expo-sensors/ios`)"
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
-  - Flipper (= 0.201.0)
-  - Flipper-Boost-iOSX (= 1.76.0.1.11)
-  - Flipper-DoubleConversion (= 3.2.0.1)
-  - Flipper-Fmt (= 7.1.7)
-  - Flipper-Folly (= 2.6.10)
-  - Flipper-Glog (= 0.5.0.5)
-  - Flipper-PeerTalk (= 0.0.4)
-  - FlipperKit (= 0.201.0)
-  - FlipperKit/Core (= 0.201.0)
-  - FlipperKit/CppBridge (= 0.201.0)
-  - FlipperKit/FBCxxFollyDynamicConvert (= 0.201.0)
-  - FlipperKit/FBDefines (= 0.201.0)
-  - FlipperKit/FKPortForwarding (= 0.201.0)
-  - FlipperKit/FlipperKitHighlightOverlay (= 0.201.0)
-  - FlipperKit/FlipperKitLayoutPlugin (= 0.201.0)
-  - FlipperKit/FlipperKitLayoutTextSearchable (= 0.201.0)
-  - FlipperKit/FlipperKitNetworkPlugin (= 0.201.0)
-  - FlipperKit/FlipperKitReactPlugin (= 0.201.0)
-  - FlipperKit/FlipperKitUserDefaultsPlugin (= 0.201.0)
-  - FlipperKit/SKIOSNetworkPlugin (= 0.201.0)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
   - libevent (~> 2.1.12)
-  - OpenSSL-Universal (= 1.1.1100)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCT-Folly/Fabric (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
@@ -1254,7 +1177,6 @@ DEPENDENCIES:
   - React-callinvoker (from `../node_modules/react-native/ReactCommon/callinvoker`)
   - React-Codegen (from `build/generated/ios`)
   - React-Core (from `../node_modules/react-native/`)
-  - React-Core/DevSupport (from `../node_modules/react-native/`)
   - React-Core/RCTWebSocket (from `../node_modules/react-native/`)
   - React-CoreModules (from `../node_modules/react-native/React/CoreModules`)
   - React-cxxreact (from `../node_modules/react-native/ReactCommon/cxxreact`)
@@ -1309,21 +1231,12 @@ DEPENDENCIES:
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
-  trunk:
-    - CocoaAsyncSocket
-    - Flipper
-    - Flipper-Boost-iOSX
-    - Flipper-DoubleConversion
-    - Flipper-Fmt
-    - Flipper-Folly
-    - Flipper-Glog
-    - Flipper-PeerTalk
-    - FlipperKit
-    - fmt
-    - libevent
-    - OpenSSL-Universal
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - SocketRocket
     - ZXingObjC
+  trunk:
+    - fmt
+    - libevent
 
 EXTERNAL SOURCES:
   boost:
@@ -1331,33 +1244,33 @@ EXTERNAL SOURCES:
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   EXAV:
-    :path: "../node_modules/.pnpm/expo-av@13.10.6_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@babel+core_zp2rozwhrq7rc5dtgepwmlltyy/node_modules/expo-av/ios"
+    :path: "../node_modules/.pnpm/expo-av@13.10.6_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-native+bab_1e445cb00bbe753f964adb7d86948bd2/node_modules/expo-av/ios"
   EXBarCodeScanner:
-    :path: "../node_modules/.pnpm/expo-barcode-scanner@12.9.3_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_punelqt4h5lc2uoqdnoh3bzxlu/node_modules/expo-barcode-scanner/ios"
+    :path: "../node_modules/.pnpm/expo-barcode-scanner@12.9.3_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@reac_507778ec3374d01133f9b94c3d615c86/node_modules/expo-barcode-scanner/ios"
   EXConstants:
-    :path: "../node_modules/.pnpm/expo-constants@15.4.2_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@babe_y3n7gabpdvaruh7tx7a6n4gexm/node_modules/expo-constants/ios"
+    :path: "../node_modules/.pnpm/expo-constants@15.4.0_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-nati_a3f2e63fe56bd225e50b9fd9926f2166/node_modules/expo-constants/ios"
   EXFont:
-    :path: "../node_modules/.pnpm/expo-font@11.10.2_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@babel+co_fvvfgt5mm5k23ccahug6zdrg34/node_modules/expo-font/ios"
+    :path: "../node_modules/.pnpm/expo-font@11.10.3_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-native+b_85b57d6fd6efa179493fdf0c3500d79d/node_modules/expo-font/ios"
   EXImageLoader:
-    :path: "../node_modules/.pnpm/expo-image-loader@4.6.0_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@ba_44a663s7rm7rcff2ghmmg3o2km/node_modules/expo-image-loader/ios"
+    :path: "../node_modules/.pnpm/expo-image-loader@4.6.0_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-na_5d5cf2ffe0acf60c7812d12478680040/node_modules/expo-image-loader/ios"
   EXLocation:
-    :path: "../node_modules/.pnpm/expo-location@16.5.5_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@babel_y7gjultdbhdgphfb3yazsw2hxe/node_modules/expo-location/ios"
+    :path: "../node_modules/.pnpm/expo-location@16.5.5_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-nativ_a418e8287d54347fc33a42d5b5f066b8/node_modules/expo-location/ios"
   Expo:
-    :path: "../node_modules/.pnpm/expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@babel+core@7.23.7_@babel+p_m5evogjajrkyzcmf2vz3xvcmzy/node_modules/expo"
+    :path: "../node_modules/.pnpm/expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-native+babel-preset@0.73.1_11e8407594deb75f2e6cf7d730b17c4a/node_modules/expo"
   ExpoBrightness:
-    :path: "../node_modules/.pnpm/expo-brightness@11.8.0_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@bab_xj2gv6cydawmjeroupmj4pmxnu/node_modules/expo-brightness/ios"
+    :path: "../node_modules/.pnpm/expo-brightness@11.8.0_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-nat_575f1190304d99c4b7d64e14e7e0a25c/node_modules/expo-brightness/ios"
   ExpoCamera:
-    :path: "../node_modules/.pnpm/expo-camera@14.1.3_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@babel+c_kvjnkoree4eblkje6grncsaq3y/node_modules/expo-camera/ios"
+    :path: "../node_modules/.pnpm/expo-camera@14.1.3_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-native+_426775f7e2e72c37045c088a0bff1ae7/node_modules/expo-camera/ios"
   ExpoFileSystem:
-    :path: "../node_modules/.pnpm/expo-file-system@16.0.9_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@ba_z7maicoqqr4hgdrme4i7xjb2ue/node_modules/expo-file-system/ios"
+    :path: "../node_modules/.pnpm/expo-file-system@16.0.9_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-na_437518240f23c3239b16236de1f83115/node_modules/expo-file-system/ios"
   ExpoImagePicker:
-    :path: "../node_modules/.pnpm/expo-image-picker@14.7.1_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@b_bniodpefwujg44kcztusmdukre/node_modules/expo-image-picker/ios"
+    :path: "../node_modules/.pnpm/expo-image-picker@14.7.1_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-n_d4fe5f92e7a1aeeb157c94b8e93280d3/node_modules/expo-image-picker/ios"
   ExpoKeepAwake:
-    :path: "../node_modules/.pnpm/expo-keep-awake@12.8.2_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@bab_kfuogcrrnqniuca3zpt35xgyc4/node_modules/expo-keep-awake/ios"
+    :path: "../node_modules/.pnpm/expo-keep-awake@12.8.2_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-nat_0cbf4269bec9fdff86b2702704f652be/node_modules/expo-keep-awake/ios"
   ExpoModulesCore:
-    :path: "../node_modules/.pnpm/expo-modules-core@1.11.7/node_modules/expo-modules-core"
+    :path: "../node_modules/.pnpm/expo-modules-core@1.11.14/node_modules/expo-modules-core"
   ExpoSensors:
-    :path: "../node_modules/.pnpm/expo-sensors@12.9.1_expo@50.0.2_@babel+core@7.23.7_@react-native+babel-preset@0.73.18_@babel+_25wu3sj5jtt6aloamydmoplbdm/node_modules/expo-sensors/ios"
+    :path: "../node_modules/.pnpm/expo-sensors@12.9.1_expo@50.0.21_@babel+core@7.29.7_supports-color@8.0.0__@react-native_fb251178372ab75657801e15e072807e/node_modules/expo-sensors/ios"
   FBLazyVector:
     :path: "../node_modules/react-native/Libraries/FBLazyVector"
   FBReactNativeSpec:
@@ -1485,99 +1398,89 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  boost: 26fad476bfa736552bbfa698a06cc530475c1505
-  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  boost: d3f49c53809116a5d38da093a8aa78bf551aed09
   DoubleConversion: fea03f2699887d960129cc54bba7e52542b6f953
-  EXAV: e4f6137431ddc4cb025895046bfefa9612025c35
-  EXBarCodeScanner: d59fd943cebee3f913ebf4ffde0d05d344da8b78
-  EXConstants: e77cccf9afb245a6fb2ea917fe5f45f0e1d8b841
-  EXFont: 21b9c760abd593ce8f0d5386b558ced76018506f
-  EXImageLoader: 55080616b2fe9da19ef8c7f706afd9814e279b6b
-  EXLocation: a631bd8dc4e7db986fb27edb7fc9ea8174ebe249
-  Expo: 6c6526e76864e140363431722b22d0fa3cdeafd2
-  ExpoBrightness: 6d160de5877289d11674aea61aacdb37422774cf
-  ExpoCamera: f3f157db67e5a491e1104a2c0018c240242936e7
-  ExpoFileSystem: 74cc0fae916f9f044248433971dcfc8c3befd057
-  ExpoImagePicker: 66970181d1c838f444e5e1f81b804ab2d5ff49bd
-  ExpoKeepAwake: 0f5cad99603a3268e50af9a6eb8b76d0d9ac956c
-  ExpoModulesCore: f103ff1346136b2926e1654f32b3f45ab0b74830
-  ExpoSensors: a88c7bed8178a38e5cd3c2759baf348781027f28
+  EXAV: e160fec51bf6bc41c3b6f7e4c72ea9fd36860cd6
+  EXBarCodeScanner: 83622fbebb5b6711a5a1ce4ccd3dfdbb5d6a0ab8
+  EXConstants: 3721165f0182296793da7a02ff0a0c3385c472d6
+  EXFont: 64e653a110eee050ad80dfcd676c4bada0a1ff92
+  EXImageLoader: ba2506b443b9656e93167c104406a2c265924823
+  EXLocation: a8037ebc0dc56b2fc5aa20eef8cb52fb6e29c002
+  Expo: 1b33cb8ab60cff9abf805ed6020af3d1846e457c
+  ExpoBrightness: eb1ffd413934738769fb5c438742eb8660c3e4e0
+  ExpoCamera: 1f56a66ed9d7530a8c436e095560bade5efa4b8a
+  ExpoFileSystem: df58e1eb2a4d6f1006a1ca70bddfbbf63e52fa4f
+  ExpoImagePicker: d06822d74f1f0e7fe7cb070ece0fff6e678fa3eb
+  ExpoKeepAwake: 3b8cf8533b9212500565a1e41fb080fc5af29918
+  ExpoModulesCore: 43ebd65adf2c0e6ffb0de24a41f8f7de12829331
+  ExpoSensors: 7101785175140e8be722797b501987a44893bff6
   FBLazyVector: 2296bacb2fa157a43991048b0a9d71c1c8b65083
   FBReactNativeSpec: 00c9b95ce75c53d6dfc543d9ba8f69572cd2054e
-  Flipper: c7a0093234c4bdd456e363f2f19b2e4b27652d44
-  Flipper-Boost-iOSX: fd1e2b8cbef7e662a122412d7ac5f5bea715403c
-  Flipper-DoubleConversion: 2dc99b02f658daf147069aad9dbd29d8feb06d30
-  Flipper-Fmt: 60cbdd92fc254826e61d669a5d87ef7015396a9b
-  Flipper-Folly: 584845625005ff068a6ebf41f857f468decd26b3
-  Flipper-Glog: 70c50ce58ddaf67dc35180db05f191692570f446
-  Flipper-PeerTalk: 116d8f857dc6ef55c7a5a75ea3ceaafe878aadc9
-  FlipperKit: 37525a5d056ef9b93d1578e04bc3ea1de940094f
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: c5d68082e772fa1c511173d6b30a9de2c05a69a2
   hermes-engine: 34df9d5034e90bd9bf1505e1ca198760373935af
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
-  OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
-  RCT-Folly: 7169b2b1c44399c76a47b5deaaba715eeeb476c0
+  RCT-Folly: cd21f1661364f975ae76b3308167ad66b09f53f5
   RCTRequired: 6dda55e483f75d2b43781d8ad5bd7df276a50981
   RCTTypeSafety: df0f2632f4e89938b9b9f6152b5e6c66fc6e969e
   React: 5373769b4a544945831d9c5d455212186d68f763
   React-callinvoker: 2c54fb73b27fdf9bd7772f36dcda23d76e0e7d14
-  React-Codegen: 65b426d1c3185df0e1d901ff56a23d94e1974791
-  React-Core: f0e1e99728ebdb785286b0c4c55f0f923a9d826f
-  React-CoreModules: 1ee65dbd93429c1c6ec3de069d75f5fde05db5d5
-  React-cxxreact: dc0f1968914a6c7da62b1287c1eb84dd3ab0a7bb
+  React-Codegen: 441e533017626938be42273d2a7db316350a630f
+  React-Core: 29cb7c8e019c40d9cd028dffc2606baf85b6b4af
+  React-CoreModules: bd3f3901d01e1f7f23346fdf2b19acf47e310a7c
+  React-cxxreact: a1ac0bf76620aac2b16342393d2dee1a02de348f
   React-debug: 52cced4b9e280d03825d687925898cf65bd8712d
-  React-Fabric: 1805f148aedab4bf31c48c8c3bae6045aeb75275
-  React-FabricImage: ee5ee9abe4ab05043fdce515e46f396b025a5028
-  React-graphics: a1652cbea6f779a1cf2692987d9c94efcd6e4497
-  React-hermes: 12499684a1005213e7ed71a94467ef72cf24320c
-  React-ImageManager: 5e50ba59059ca7547c8968f936e4ae7a50ff7384
-  React-jserrorhandler: 27154e650959506a4455384f3aea134eba62335b
-  React-jsi: b03ac7f7af1371e3e81e8ac894af4e46454dee79
-  React-jsiexecutor: ae30693413a40b7c72f25da2e794997754a780bf
+  React-Fabric: 0e76260f4e56d07e0a17dcb6bf89a773d360b7f1
+  React-FabricImage: a038dc64e8f0258d07602046f76be0e4ccedc56a
+  React-graphics: 8325502a51fbfb8951968345c39c7a11e2277050
+  React-hermes: e87ea4a33640102676237dabfa117d60614d3e44
+  React-ImageManager: 4b2be19fcc87e6460405fea68c0375f985b6eb5b
+  React-jserrorhandler: 88d1cd6ae254f396ae666a9ad5e23e5921f46f10
+  React-jsi: 1b03b7a00877cdba995e96d2476c8757495b8897
+  React-jsiexecutor: 38fef6e60367ad3090c54a8d91f1fb48ed773366
   React-jsinspector: 369048694e39942063c5d08e9580b43e2edd379a
-  React-logger: e0c1e918d9588a9f39c9bc62d9d6bfe9ca238d9d
-  React-Mapbuffer: 9731a0a63ebaf8976014623c4d637744d7353a7c
-  react-native-cameraroll: 69001b89b62dee286727c3dcc1a4c28890463c18
-  react-native-geolocation: c15fa78a481451620baff55cfc2e04a52e033dd7
-  react-native-image-resizer: fd0c333eca55147bd55c5e054cac95dcd0da6814
-  react-native-netinfo: 3aa5637c18834966e0c932de8ae1ae56fea20a97
-  react-native-pager-view: d81ab2060b9caf57ca8c3a0d57467ff407cdb825
-  react-native-safe-area-context: 0ee144a6170530ccc37a0fd9388e28d06f516a89
-  react-native-slider: 33b8d190b59d4f67a541061bb91775d53d617d9d
-  react-native-webview: f95eb7d4d6a7ca45d04d861d99f628241b2aff83
+  React-logger: c6cc01d7cff5f77924db08c7fbaf5a4d7a9ab857
+  React-Mapbuffer: cdacbf489e965b624d6b8a9b3a4529c15116a708
+  react-native-cameraroll: d2fb736f331887092f7303ddd7d0d9876baf884a
+  react-native-geolocation: fa6f4031769bf0053e24456c16511b00347d5c4c
+  react-native-image-resizer: 24c5d06fae2176dc0caed4b6396e02befb44064a
+  react-native-netinfo: 5364263f903da576bdef9c84a76fe243ab06812c
+  react-native-pager-view: ec6c5642b9594e6a974ff0e44ed5baa705abc404
+  react-native-safe-area-context: bf9d9d58f0f6726d4a6257088044c2595017579d
+  react-native-slider: 3051c537444d711b566d1e4d681c6cd35081ae6f
+  react-native-webview: 2ca53dd5eba34aa76354218ba54b33c4b481dfef
   React-nativeconfig: 37aecd26d64b79327c3f10e43b2e9a6c425e0a60
-  React-NativeModulesApple: 9ca6d2eaa1dd5606588262195b46d0774bdec83a
+  React-NativeModulesApple: ef377fffdb9789f87b27c30e3597d7c00190e7ed
   React-perflogger: 5ffc4d6ccb74eaac7b8b2867e58a447232483d6d
   React-RCTActionSheet: eca2174431ff2cc14b7fb847f92b89e081d27541
-  React-RCTAnimation: a039b2416aa0a55e6fa7c8cd0a2e870bfffc4caa
-  React-RCTAppDelegate: be26c542774d36211b1562a9278c72f821887103
-  React-RCTBlob: 0d4892d25e57fbbce13e221fff7e4c9567a2ace3
-  React-RCTFabric: d11187cac1f4e0141738805f7011145c7786a369
-  React-RCTImage: 5b70891cb2adb75bbdc5ad8e6cc56c48e95d90e5
-  React-RCTLinking: 5fe4756ab016e9f200e93e771bd6e43ea05f8f50
-  React-RCTNetwork: 877b4a85f71c63cf719574f187e3333c1e15a425
-  React-RCTSettings: ae477a33a04389f5d42486004b09b04eeba64fd5
-  React-RCTText: 08dd5d7173ed279d3468b333217afb22bb7948c3
-  React-RCTVibration: 2f906cd58dfd44ff5e4ca4fc0edd8740dceda6be
-  React-rendererdebug: e3db5db14234d9ee46d2e58fff3b8652ee7da6bc
+  React-RCTAnimation: 86e56a30d021edabc56a9b1cf309c2868f0b69c2
+  React-RCTAppDelegate: a2009bdd4152e438df6a1af537904ce975bff9cf
+  React-RCTBlob: 25e279582da8859a6d41de52747f35d6ca9dcfb9
+  React-RCTFabric: e2b03b05717740e6b0b03ee42c091ddf6fce522e
+  React-RCTImage: f380e18a6bcce14cb01c04bfb783f877816d48c8
+  React-RCTLinking: 2d793263f2413df759841dcdd24cbfcd575e932b
+  React-RCTNetwork: 0a23d76fcb3653cc2789f71d21aebe61163652ca
+  React-RCTSettings: 1aaae5f724b89519814717b5ed451f620256335c
+  React-RCTText: b930334c85d62557b32b42c7a337f04e05fa937d
+  React-RCTVibration: 7d2ca6bb0020ec1b93909a12b68563016b401a84
+  React-rendererdebug: cab0499c9dfdf345acce218befbb961378891828
   React-rncore: 8b52cc253dcb365241989590ce097464810db205
   React-runtimeexecutor: d87e84455640dc5685e87563c2eaef90e5df8752
-  React-runtimescheduler: 93a4c84e46a85c3fc9678abd4f6923b785226ea7
-  React-utils: debda2c206770ee2785bdebb7f16d8db9f18838a
-  ReactCommon: ddb128564dcbfa0287d3d1a2d10f8c7457c971f6
-  RNCAsyncStorage: 618d03a5f52fbccb3d7010076bc54712844c18ef
-  RNCClipboard: 2821ac938ef46f736a8de0c8814845dde2dcbdfb
-  RNCMaskedView: 090213d32d8b3bb83a4dcb7d12c18f0152591906
-  RNCPicker: b18aaf30df596e9b1738e7c1f9ee55402a229dca
-  RNDeviceInfo: 6192a9c9167e256803e554038b22b3b2b40163dc
-  RNGestureHandler: 61bfdfc05db9b79dd61f894dcd29d3dcc6db3c02
-  RNScreens: b582cb834dc4133307562e930e8fa914b8c04ef2
-  RNSVG: ba3e7232f45e34b7b47e74472386cf4e1a676d0a
+  React-runtimescheduler: fbb86d1d0106c8cdf8eef2b40dd13777ec350346
+  React-utils: eeb855be1ce3f62dc5907a299dd2495858abc2f8
+  ReactCommon: 1ea6a0bf804e7371f8da38d7851f0adb8f76f479
+  RNCAsyncStorage: a03b770a50541a761447cea9c24536047832124d
+  RNCClipboard: f6679d470d0da2bce2a37b0af7b9e0bf369ecda5
+  RNCMaskedView: 1d506a5e6c2a15715b9e344694f404f526ec28d1
+  RNCPicker: 7ea4c112b43a2033ddb1e5e2ecb2e826f222b897
+  RNDeviceInfo: d863506092aef7e7af3a1c350c913d867d795047
+  RNGestureHandler: 55447e4051459b0b7f5f5173567f92286d01cf88
+  RNScreens: 8d1521c6e375a79dbd4525efaf21704cc64ac0cf
+  RNSVG: 6d5ed33b6635ed6d6ecb50744dcf127580c39ed5
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: 4f53dc50008d626fa679c7a1cb4bed898f8c0bde
   ZXingObjC: 8898711ab495761b2dbbdec76d90164a6d7e14c5
 
-PODFILE CHECKSUM: aae9b003dd9b1b6a43b43b86b19224808093aa47
+PODFILE CHECKSUM: b27b73028d4ed8d6310c57d0f9fc7aa20bc36d9e
 
-COCOAPODS: 1.14.2
+COCOAPODS: 1.16.2
