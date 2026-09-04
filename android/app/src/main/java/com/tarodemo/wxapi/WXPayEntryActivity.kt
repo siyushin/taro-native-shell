@@ -1,0 +1,14 @@
+package com.tarodemo.wxapi
+
+import android.app.Activity
+import android.os.Bundle
+import com.theweflex.react.WeChatModule
+
+// react-native-wechat-lib support：微信支付回调入口（包名必须为 wxapi，微信 SDK 约定）
+class WXPayEntryActivity : Activity() {
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    WeChatModule.handleIntent(intent)
+    finish()
+  }
+}

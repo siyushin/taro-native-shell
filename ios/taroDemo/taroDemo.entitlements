@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- react-native-wechat-lib support：微信 SDK 强制 Universal Links 回调 -->
+	<!-- TODO: 替换 example.com 为托管 apple-app-site-association 的真实域名 -->
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>applinks:example.com</string>
+	</array>
+</dict>
+</plist>

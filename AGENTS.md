@@ -87,6 +87,7 @@ cd ios && pod install     # 安装 iOS Pods（或 pnpm upgradePeerdeps 自动执
 - **升级 RN 小版本**：使用 [upgrade-helper](https://react-native-community.github.io/upgrade-helper/)。
 - **Android 定制点**：国内 maven 镜像源（阿里云，`android/build.gradle`）、fresco gif 支持（`animated-gif:2.5.0`）、`debuggableVariants = ["debug", "release"]`（即 release 也不内置打 bundle，jsbundle 由 Taro JS 工程输出）、expo-camera 自带 maven 仓库。
 - **iOS 定制点**：`Info.plist` 已声明相机、相册、定位、麦克风、运动等权限描述；强制亮色主题；`ITSAppUsesNonExemptEncryption = false`；main.jsbundle 以资源引用方式加入工程。
+- **微信 SDK（react-native-wechat-lib）**：已集成用于微信支付（JS 侧 registerApp 的 AppID/Universal Links 在 xhs 工程 `src/constants/pay.ts`，当前为占位符）。配置点：iOS `Info.plist` 的 `CFBundleURLTypes`（wx+AppID scheme，待替换真实 AppID）与 `LSApplicationQueriesSchemes`、`AppDelegate.h/.mm` 实现 `WXApiDelegate` 并转发 openURL/continueUserActivity、`taroDemo.entitlements` 的 `applinks:` 域名（待替换，需服务端托管 apple-app-site-association）；Android 不支持 autolinking，`MainApplication.kt` 手动注册 `WeChatPackage`，`wxapi/WXEntryActivity.kt` 与 `WXPayEntryActivity.kt` 为微信 SDK 约定的回调入口（包名不可改），Manifest 加了 `com.tencent.mm` 包可见性 queries。上线前还需在微信开放平台登记 Android 包名 + 签名 MD5、iOS Bundle ID。
 - **不要改动**：`android/app/build.gradle` 中注释掉的 RN 默认 bundle 打包逻辑、`debuggableVariants` 配置，否则会与 Taro 分离模式的 bundle 输出流程冲突。
 
 ## 安全注意事项

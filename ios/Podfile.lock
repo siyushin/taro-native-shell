@@ -82,6 +82,8 @@ PODS:
     - FBLazyVector (= 0.73.1)
     - RCTRequired (= 0.73.1)
     - React-Core (= 0.73.1)
+  - RCTWeChat (1.1.27):
+    - React-Core
   - React (0.73.1):
     - React-Core (= 0.73.1)
     - React-Core/DevSupport (= 0.73.1)
@@ -1173,6 +1175,7 @@ DEPENDENCIES:
   - RCT-Folly/Fabric (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
+  - RCTWeChat (from `../node_modules/react-native-wechat-lib`)
   - React (from `../node_modules/react-native/`)
   - React-callinvoker (from `../node_modules/react-native/ReactCommon/callinvoker`)
   - React-Codegen (from `build/generated/ios`)
@@ -1286,6 +1289,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/RCTRequired"
   RCTTypeSafety:
     :path: "../node_modules/react-native/Libraries/TypeSafety"
+  RCTWeChat:
+    :path: "../node_modules/react-native-wechat-lib"
   React:
     :path: "../node_modules/react-native/"
   React-callinvoker:
@@ -1423,6 +1428,7 @@ SPEC CHECKSUMS:
   RCT-Folly: cd21f1661364f975ae76b3308167ad66b09f53f5
   RCTRequired: 6dda55e483f75d2b43781d8ad5bd7df276a50981
   RCTTypeSafety: df0f2632f4e89938b9b9f6152b5e6c66fc6e969e
+  RCTWeChat: 30f7ffea04116d2bf662599fb06f6d6c8b9c2578
   React: 5373769b4a544945831d9c5d455212186d68f763
   React-callinvoker: 2c54fb73b27fdf9bd7772f36dcda23d76e0e7d14
   React-Codegen: 441e533017626938be42273d2a7db316350a630f

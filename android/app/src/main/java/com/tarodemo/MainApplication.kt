@@ -14,15 +14,17 @@ import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
 import com.facebook.react.defaults.DefaultReactNativeHost
 import com.facebook.react.flipper.ReactNativeFlipper
 import com.facebook.soloader.SoLoader
+import com.theweflex.react.WeChatPackage
 
 class MainApplication : Application(), ReactApplication {
 
   override val reactNativeHost: ReactNativeHost =
       ReactNativeHostWrapper(this, object : DefaultReactNativeHost(this) {
         override fun getPackages(): List<ReactPackage> {
-          // Packages that cannot be autolinked yet can be added manually here, for example:
-          // packages.add(new MyReactNativePackage());
-          return PackageList(this).packages
+          val packages = PackageList(this).packages.toMutableList()
+          // react-native-wechat-lib 不支持 autolinking，需手动注册
+          packages.add(WeChatPackage())
+          return packages
         }
 
         override fun getJSMainModuleName(): String = "index"
